@@ -26,7 +26,7 @@ module Minitest
 
       def print(o)
         if Minitest::CustomizeResult.use?
-          @io.print(Minitest::CustomizeResult.result_codes[o])
+          @io.print("#{Minitest::CustomizeResult.result_codes[o]} ")
         else
           @io.print(o)
         end
