@@ -1,3 +1,5 @@
+require 'minitest/customize_result'
+
 module Minitest
   def self.plugin_customize_result_init(opts)
     io = Minitest::CustomizeResult::Reporter.new(opts[:io])
